@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'This is first Angular app targeting AZURE env...';
+  title2 = 'This is second title for this app...';
 }
