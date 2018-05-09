@@ -3,13 +3,18 @@
   <h1>
     Welcome to {{ title }}!
   </h1>
-  <h2>
-    Addin second title {{title2}}
-  </h2>
+  <div #pdfContent>
+    <h1>This is PDF title</h1>
+    <p>This is PDF content.</p>
+  </div>
 </div>
 <nav>
   <a routerLink="/red">RED</a>
   <a routerLink="/blue">BLUE</a>
 </nav>
+<button (click)="testWordFile()">Generate Word Doc</button>
+<button (click)="testPDFFile()">Generate PDF Doc</button>
+
+
 <router-outlet></router-outlet>
 
