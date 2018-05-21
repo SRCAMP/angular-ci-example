@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { RedComponent } from './red/red.component';
 import { BlueComponent } from './blue/blue.component';
+import { DataTableComponent } from './data-table/data-table.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,10 @@ const routes: Routes = [
       {
         path: 'blue',
         component: BlueComponent
+      },
+      {
+        path: 'table',
+        component: DataTableComponent
       },
     ]
   },

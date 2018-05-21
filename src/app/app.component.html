@@ -1,20 +1,19 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <div #pdfContent>
-    <h1>This is PDF title</h1>
-    <p>This is PDF content.</p>
-  </div>
-</div>
-<nav>
-  <a routerLink="/red">RED</a>
-  <a routerLink="/blue">BLUE</a>
-</nav>
-<button (click)="testWordFile()">Generate Word Doc</button>
-<button (click)="testPDFFile()">Generate PDF Doc</button>
+<main-nav>
+  <div class="mBody">
+      <!-- <div style="text-align:center"> -->
+          <div #pdfContent class="pdfContent">
+            <h1>This is PDF title</h1>
+            <p>This is PDF content.</p>
+          </div>
+        <!-- </div> -->
+        <button mat-raised-button color="primary" (click)="testWordFile()">Generate Word Doc</button>
+        <button mat-raised-button color="accent" (click)="testPDFFile()">Generate PDF Doc</button>
+        <!-- <button mat-raised-button color="warn">Generate test PDF Doc</button> -->
 
 
-<router-outlet></router-outlet>
+        <router-outlet></router-outlet>
+        </div>
 
+
+</main-nav>

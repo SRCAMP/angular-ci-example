@@ -9,7 +9,7 @@ import * as jsPDF from 'jspdf';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'This is first Angular app deployed to AZURE env...';
+
   @ViewChild('pdfContent') pdfContent: ElementRef;
 
   docContent=`<HTML>
@@ -414,7 +414,7 @@ export class AppComponent {
       }
     }
      doc.fromHTML(this.pdfContent.nativeElement,15,15,{
-      'width': 190,
+      //'width': 100,
       'elementHandlers': specialElementHandler
     });
     doc.save('testPDF.pdf');
